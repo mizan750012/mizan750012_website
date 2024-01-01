@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>facebook-Log In or Sign</title>
+    
+        <style>
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            .heading{
+                background-color:#3B5998;
+                color: whitesmoke;
+            }
+            .heading:after{
+                content:"";
+                display: block;
+                clear: both;
+            }
+            .heading-left{
+                width: 40%;
+                float: left;
+            }
+            .heading-left p{
+                font-size: 40px;
+                font-weight: bold;
+                margin: 15px 100px;
+                transition: 0.3s;
+            }
+            .heading-left:hover{
+                opacity: 0.7;
+            }
+
+            .heading-right{
+                width: 60%;
+                float:left;
+                font-size: 13px;
+            }
+            .email{
+                display: block;
+                float: left;
+                margin-left: 205px;
+                margin-top: 4px
+                }
+            .email p{
+                display: block;
+                cursor: pointer;
+                margin-bottom: 0px;
+                transition: 0.3s;
+            } 
+            .email p:hover{
+                opacity: 0.7;
+            }   
+            .email input{
+                display: block;
+                border-radius: 1px;
+                border: 1px solid white;
+                transition: 0.3s;
+            }
+            .email input:hover{
+                opacity: 0.7;
+            }
+            .password{
+                display: block;
+                float: left;
+                margin-left: 25px;
+                margin-top: 4px;
+            }
+            .password p{
+                display: block;
+                margin-bottom: 0;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+            .password p:hover{
+                opacity: 0.7;
+            }
+            .password input{
+                display: block;
+                border-radius: 1px;
+                border: 1px solid whitesmoke;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            .password input:hover{
+                opacity:0.7;
+            }
+            .forget-account{
+                display: block;
+                color: whitesmoke;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            .forget-account:hover{
+                opacity: 0.7;
+            }
+            .submit-button{
+                display: block;
+                float: left;
+                margin-top: 30px;
+                margin-left: 25px;
+                padding: 2px;
+                color: whitesmoke;
+                border-radius: 2px;
+                background-color: #3B5998;
+                border:1px solid #3B5998;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            .submit-button:hover{
+                opacity: 0.7;
+                font-weight: bold;
+                background-color:black;
+            }
+            .left-area{
+                width: 55%;
+                float: left;
+                font-size: 13px;
+            }
+            .left-area p{
+                color:#0E3858;
+                font-size: 22px;
+                font-weight: bold;
+                width: 65%;
+                margin-left: 100px;
+                margin-top: 40px;
+            }
+            .left-area img{
+                display: inline-block;
+                float: left;
+                margin-left: 100px;
+            }
+            .right-area{
+                width:45%;
+                float: left;
+            }
+            .right-area h2{
+                color: #333333;
+                font-size: 35px;
+                margin-top: 35px;
+                margin-bottom: 5px;
+            }
+            .right-area> p{
+                color: #333;
+                font-size: 20px;
+                margin:10px 0px;
+            }
+            .right-area input[type=text],
+            .right-area input[type=password]{
+                width: 95%;
+                font-size: 14px;
+                padding: 5px;
+                margin: 5px 0px;
+                border-radius: 3px;
+                border: 1px solid #bdc7d8;
+            }
+            .form-part input:nth-child(1){
+                width:46%;
+                float:left;
+                margin-right:7px;
+            }
+            .form-part input:nth-child(2){
+                width:46%;
+                float: left;
+            }
+            .bbb-option select{
+                padding: 3px;
+                font-size: 15px;
+                border: 1px solid #bdc7d8;
+            }
+            .bbb-option h3{
+                color: #333;
+                font-size: 20px;
+                font-weight: normal;
+            }
+            .bbb-link a{
+                color:#365899;
+                font-size: 13px;
+                display: block;
+            }
+            .bbb-option{
+                float: left;
+            }
+            .bbb-link{
+                float: left;
+                width:160px;
+                margin-left: 10px;
+                transition: 0.3s;
+            }
+            .bbb-link:hover{
+                opacity: 0.7;
+            }
+            .sex{
+                width:50%;
+            }
+            .sex label{
+                color: #333;
+                cursor: pointer;
+                font-size: 15px;
+                margin-top: 15px;
+                display: inline-block;
+            }
+            p.policy{
+                font-size: 13px;
+                color: #777;
+                width:70%;
+            }
+            p.policy a{
+                color:#365899;
+                font-weight:bolder;
+                transition: 0.3s;
+            }
+            p.policy a:hover{
+                opacity: 0.7;
+            }
+            .subbutton{
+                background: linear-gradient(#67ae55, #578843);
+                padding:7px 28px;
+                font-size: 18px;
+                color: #fff;
+                box-shadow: inset 0 1px 1px #a4e388;
+                border-color: #3b6e22, #3b6e22, #2c5115;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            .subbutton:hover{
+                background: linear-gradient( #578843 ,#67ae55);
+                opacity: 0.7;
+            }
+            h4{
+                color: #666;
+                font-size: 13px;
+            }
+            h4 a{
+                color: #365899;
+                font-weight: bolder;
+            }
+            h4 a:hover{
+                opacity: 0.8;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="heading">
+            <div class=" heading-left">
+                <p>facebook</p>
+            </div>
+
+            <div class="heading-right">
+                <div class="email">
+                    <p>Email or Phone</p>
+                    <input type="text" id="eml">
+                </div>
+
+                <div class="password">
+                    <p>Password</p>
+                    <input type="pass" id="passw">
+                    <a class="forget-account" style=" color: whitesmoke;" href="Forget Account">Forget Account?</a>
+                </div>
+
+                <div>
+                    <input class="submit-button" type="submit" value="Log In">
+                </div>
+            </div>
+        </div> 
+        
+        <!-- start body part from here-->
+    
+        <div class="left-area">
+            <p>Facebook helps you and connect and share with the people in your life.</p>
+            <img  style="height: 200px; width: 453px;" src="network.image.png" alt="network">
+        </div>
+
+        <div class="right-area">
+            <div>
+                <h2> Create an account </h2>
+                <p>It's free and always will be.</p>
+            </div>
+        
+            <form action="">
+                <div class="form-part">
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Surname">
+                </div>
+            
+                    <input type="text" placeholder="Mobile number or email address">
+                    <input type="text" placeholder="Re-enter mobile number or email address">
+                    <input type="password" placeholder="New password">
+                
+
+                <div class="birth-day">
+                    <h3>Birthday</h3>
+                    <div class="bbb-option">
+                        <select name="" id="">
+                            <option value=""> Day</option>
+                            <option value=""> 01</option>
+                            <option value=""> 02</option>
+                            <option value=""> 03</option>
+                            <option value=""> 04</option>
+                        </select>
+                        <select name="" id="">
+                            <option value=""> Month</option>
+                            <option value=""> 01</option>
+                            <option value=""> 02</option>
+                            <option value=""> 03</option>
+                            <option value=""> 04</option>
+                        </select>
+                        <select name="" id="">
+                            <option value=""> Year</option>
+                            <option value=""> 2001</option>
+                            <option value=""> 2002</option>
+                            <option value=""> 2003</option>
+                            <option value=""> 2004</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="bbb-link">
+                    <a href="#"> Why do I need to provide my date of birth?</a>
+                </div>
+                <div class="sex">
+                    <label for="male">Male</label> <input type="radio" name="same" id="male">
+                    <label for="female">Female</label> <input type="radio" name="same" id="female">
+                </div>
+                <div>
+                    <p class="policy">By clicking an account you agerr to <a href="">Terms</a> and confirm that you have 
+                        read our <a href="">Data Policy</a>, 
+                        including our <a href="">cookie </a> use policy. You may receive SMS messages notification from Facebook 
+                        can opt out at any time.</p>
+                    <input  class="subbutton" type="submit" value="Create and account">
+                </div>
+            </form>
+                   <h4> <a href="">Create a page</a>  for a celebirting brand our business.</h4>
+
+        </div>
+
+            
+    </body>
+</html>

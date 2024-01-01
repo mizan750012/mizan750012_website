@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log In or sign Up</title>
+</head>
+
+<style>
+    body{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .header-area{
+        display: grid;
+        grid-template-columns: 7fr 4fr;
+        background-color: #3B5998;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+    }
+    .left-area{
+        font-size: 38px;
+        margin-left: 100px;
+    }
+    .right-area{
+        font-size: 13px;
+    }
+    .email-phone{
+        display: block;
+        float: left;
+        width: 180px;
+    }
+    .password{
+        display: block;
+        float: left;
+        width:180px;
+    }
+    .right-area a{
+        color:white;
+        transition: 0.3s;
+    }
+    .right-area a:hover{
+        opacity: 0.5;
+
+    }
+    .submit-button{
+        display:block;
+        float: left;
+        background-color: #4e6baa;
+        color: white;
+        font-size: 13px;
+        margin-top: 15px;
+        border: none;
+        padding-bottom: 4px;
+        transition: 0.3s;
+    }
+    .submit-button:hover{
+        opacity: 0.7;
+    }
+    
+</style>
+
+<body>
+
+    <div class="header-area"> 
+
+        <div class="left-area">
+            <label for="facebook"> facebook</label>
+        </div>
+           
+        <form action="">
+        <div class="right-area">
+            <div class="email-phone">
+            <label for="email">Email or Phone</label>
+            <input type="text" id="email">
+            </div>
+            <div class="password">
+            <label for="pass">Password</label>
+            <input type="text" id="pass">
+            <a href="#"> Forgoten Account?</a>
+            </div>
+            <div>
+            <input class="submit-button" type="submit" value="Log In">
+            </div>
+        </div>
+                
+        </form>
+    </div>   
+    
+</body>
+</html>

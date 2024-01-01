@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> student's information</title>
+        
+    </head> 
+
+    <style>
+
+        .total-form{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background: whitesmoke;
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 80%;
+        }
+
+        h2{
+            text-align:center;
+            text-decoration: underline;
+            margin-bottom: 50px;
+            width: 100%;
+        }
+        .input-text{
+            line-height: 60px;
+            font-weight: bolder;
+            font-size: 18px;
+            border:1px solid #bdc7d8;
+            transition:0.3s ;
+            padding-bottom: 60px;
+        }
+        
+        .input-text input[type="text"]{
+            padding:9px;
+            width:50%;
+        }
+        .signature{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+            text-decoration: overline;
+            width: 100%;
+        }
+
+        .badminton{
+            position: absolute;
+            margin-top: -80px;
+            margin-left: 1000px;
+        }
+    </style>
+
+    <body>
+        <div class="total-form">
+            <div>
+                <h2>Student's Information Form</h2>
+            </div>
+            <div class="badminton">
+                <img height="60px" width="60px" src="badminton_racket.jpg" alt="">
+            </div>
+            
+            <div>
+                <pre class="input-text">
+                Student's Name     :<input type="text">
+                Father's Name      :<input type="text">
+                Mother's Name      :<input type="text">
+                Roll No.           :<input type="text">
+                Section Name       :<input type="text">
+                Date of Birth      :<input type="text">
+                School Name        :<input type="text">
+                Telephone No.      :<input type="text">
+                Address            :<input type="text">
+                Others Information :<input type="text">
+                </pre>
+            </div>
+            
+
+            <div class="signature">
+                <h4>Guardian's Signature </h4>
+                <h4>Teacher's Signature </h4>
+            </div>
+        </div>
+    </body>
+</html>

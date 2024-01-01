@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kids! css</title>
+    </head>
+
+    <style>
+        .all-page{
+            background:linear-gradient(#e1fc87,#afc752,#657230,#171a0c);
+            color: white;
+            font-family: 'Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
+            width:100%;
+        }
+        
+        .header{
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             padding-top: 50px;
+             padding-bottom: 200px;
+        }
+        .cuda{
+            font-style: oblique;
+            font-size: 70px;
+            margin-left: 200px;
+            margin-top: 40px;
+
+        }
+        .right-header{
+            font-size: 20px;
+            margin-left: 50px;
+            margin-bottom: 0;
+            padding: 55px 0;
+            color: white;
+        }
+        .kids-para{
+            display: block;
+            text-align: left;
+            width:550px;
+            margin-left: 380px;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .work{
+            padding-bottom: 40px;
+            text-align: center;
+            margin-left: -20px;
+        }
+        .work-with-us{
+            padding: 15px 7px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 3px;
+            border: none;
+            cursor: pointer;
+            background: linear-gradient(#576b07, #cccec6,#080805);
+            transition:0.3s ;
+        }
+        .work-with-us:hover{
+            opacity: 0.7;
+        }
+
+        .right-header a{
+            color: white;
+        }
+
+    </style>
+
+    <body>
+        <div class="all-page">
+            <div class="header">
+                    <p class="cuda"> Cuda </p>
+                <p class="right-header">
+                    <a  href="A">HOME</a>
+                    <a href="B">ABOUT</a>
+                    <a href="C">WORK</a>
+                    <a href="D">BLOG</a>
+                    <a href="E">CONTACT</a>
+    
+                </p>
+            </div>
+
+            <div class="kids-para"> 
+                Hi there: We are the new kids on the block and we build awsome webside and mobile apps.
+            </div>
+
+            <div class=" work">
+                <input class="work-with-us" type="text" placeholder="WORK WITH US">
+            </div>
+        </div>    
+    </body>
+</html>
